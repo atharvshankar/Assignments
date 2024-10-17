@@ -5,7 +5,6 @@ import { useMemo, useState } from "react";
 
 export function Assignment1() {
     const [input, setInput] = useState(0);
-    // Your solution starts here
 
     const expensiveValue = useMemo(()=> calculateFactorial(input), [input]);
     function calculateFactorial(input){
@@ -15,7 +14,6 @@ export function Assignment1() {
         }
         return factorialValue;
     }
-    // Your solution ends here
 
     return (
         <div>
