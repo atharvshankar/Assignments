@@ -30,9 +30,9 @@ export function Assignment1() {
     );
 };
 
-const CounterButtons = memo(({ onIncrement, onDecrement }) => (
+const CounterButtons = ({ onIncrement, onDecrement }) => (
     <div>
         <button onClick={onIncrement}>Increment</button>
         <button onClick={onDecrement}>Decrement</button>
     </div>
-));
+);
